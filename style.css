@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background-color: white; */
+  color: black;
+  font-family: system-ui;
+}
+.crud {
+  width: 80%;
+  margin: auto;
+}
+/* Start Head */
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+/* End Head */
+/* Start input */
+input {
+  width: 100%;
+  height: 30px;
+  outline: none;
+  border: 2px solid #e1e0e1;
+  background: white;
+  margin: 3px 0;
+  border-radius: 5px;
+  padding: 2px;
+  color: black;
+}
+input:focus {
+  background: #f5f4f6;
+  transform: scale(1.1);
+}
+.inputs .price input {
+  width: 20%;
+}
+.inputs .price #total {
+  background-color: antiquewhite;
+  padding: 5px 2px;
+  border-radius: 4px;
+}
+.inputs .price #total::before {
+  content: "Total: ";
+}
+button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  background-color: #009688;
+  font-weight: 600;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #3aa89d;
+  letter-spacing: 1px;
+}
+#update {
+  background-color: #365ff4;
+}
+td .delete {
+  background-color: #f44336;
+}
+/* End input */
+/* Start Outpus */
+.outpus .btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+.outpus .btnSearch button {
+  width: 45%;
+}
+/* End Outpus */
+/* Start Table */
+#deleteAll {
+  margin: 20px 0;
+}
+tabel #tobdy {
+  background: white;
+  box-shadow: 0 0 10px #ddd;
+  overflow: auto;
+}
+.crud table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+  background: white;
+  box-shadow: 0 0 10px #ddd;
+  overflow: auto;
+  border-collapse: collapse;
+}
+.crud table th {
+  text-transform: uppercase;
+  color: #8493a5;
+}
+.crud table th,td {
+  padding: 4px;
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  padding: 10px 20px;
+}
+/* End Table */
+/* Start Modal */
+
+
+.container {
+  margin: 100px auto;
+  text-align: center;
+}
+
+/* The Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content/Box */
+.modal .modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Buttons */
+.modal button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.modal button#deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.modal button#confirmDelete {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.modal button#cancelDelete {
+  background-color: #ccc;
+  color: black;
+  border: none;
+}
+
+/* End Modal */
